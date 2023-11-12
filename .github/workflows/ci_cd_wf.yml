@@ -27,3 +27,8 @@ jobs:
       - name: Run tests
         run: |
           python -m pytest -v tests
+      - name: Pytest coverage comment
+        uses: martahuelin/week1-devops@main
+        with:
+          pytest-coverage-path: ./pytest-coverage.txt
+          junitxml-path: ./pytest.xml
